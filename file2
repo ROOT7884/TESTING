@@ -12,3 +12,8 @@
      with_items:
        - test1
        - test2
+
+provisioners "aws" {
+	region = "{region}"
+	profile = "default"
+}       
