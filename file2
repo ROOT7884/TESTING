@@ -4,3 +4,14 @@
   connection: local
   variable_files:
     - MBR/sandeep/sai//rani
+  tasks:
+    - name: installation
+      yum:
+        name: "{{item}}"
+	state: present
+      with_items:
+        - git 
+	- maven
+	- java
+
+
