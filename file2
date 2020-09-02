@@ -1,0 +1,6 @@
+---
+- name: ec2
+  hosts: local
+  connection: local
+  variable_files:
+    - MBR/sandeep/sai//rani
