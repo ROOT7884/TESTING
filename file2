@@ -4,3 +4,11 @@
   connection: local
   variable_files:
     - MBR/sandeep/sai//rani
+  tasks:
+    -name: installation
+     yum: 
+       name: "{{item}}"
+       state: started
+     with_items:
+       - test1
+       - test2
